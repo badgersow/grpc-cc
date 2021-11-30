@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message OumaRequest {
+    string message = 1;
+}
+
+message OumaReply {
+    string message = 1;
+}
+
+service OumaService {
+    rpc prophesize(OumaRequest) returns (OumaReply) {}
+}
